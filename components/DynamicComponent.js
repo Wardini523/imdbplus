@@ -26,6 +26,7 @@ import Title from './Title'
 import TopMovies from './TopMovies'
 import AgeRating from './AgeRating'
 
+
 const Components = {
   'teaser': Teaser,
   'grid': Grid,
@@ -69,9 +70,9 @@ const DynamicComponent = ({ data, locale }) => {
   }
   if (componentType !== 'undefined') {
     const Component = Components[componentType]
-    return <Component data={data} level={level} locale={locale}  />
+    return <Component data={data} level={level} locale={locale} />
   }
-  return <Placeholder componentName={componentType}/>
+  return <Placeholder componentName={componentType} />
 }
 
 export default DynamicComponent
