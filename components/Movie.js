@@ -23,14 +23,14 @@ const resolveStars = {
   nl: 'Sterren',
 }
 
-const resolveMerchandise = {
-  en: 'Merchandise',
-  nl: 'Producten',
-}
-
 const resolveNews = {
   en: 'News',
   nl: 'Nieuws',
+}
+
+const resolveMerchandise = {
+  en: 'Merchandise',
+  nl: 'Producten',
 }
 
 const Movie = ({ data, level }) => {
