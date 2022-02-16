@@ -25,6 +25,14 @@ import TwoCol from './TwoCol'
 import Title from './Title'
 import TopMovies from './TopMovies'
 import AgeRating from './AgeRating'
+import Brood from './Brood'
+import Taart from './Taart'
+import Pistolet from './Pistolet'
+import Koffiekoek from './Koffiekoek'
+import Gebak from './Gebak'
+import IngredientenList from './IngredientenList'
+import Assortiment from './Assortiment'
+import Contact from './Contact'
 
 
 const Components = {
@@ -54,7 +62,15 @@ const Components = {
   'twocol':TwoCol,
   'title':Title,
   'topmovies':TopMovies,
-  'agerating':AgeRating
+  'agerating':AgeRating,
+  'brood':Brood,
+  'taart':Taart,
+  'pistolet':Pistolet,
+  'koffiekoek': Koffiekoek,
+  'gebak': Gebak,
+  'ingredientenlist': IngredientenList,
+  'assortiment': Assortiment,
+  'contact': Contact,
 }
 
 

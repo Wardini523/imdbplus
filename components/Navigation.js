@@ -3,20 +3,20 @@ import Image from "next/image"
 
 const Navigation = ({ locale, locales }) => {
   const resolveMovies = {
-    en: 'Movies',
-    nl: 'Films',
+    en: 'Kort',
+    fr: 'Court'
   }
   const resolvePeople = {
-    en: 'People',
-    nl: 'Mensen',
+    en: 'Assortiment',
+    fr: 'Gamme de produits',
   }
   const resolveNews = {
-    en: 'News',
-    nl: 'Nieuws',
+    en: 'Nieuws',
+    fr: 'Des nouvelles',
   }
-  const resolveMerchandise = {
-    en: 'Shop',
-    nl: 'Winkel',
+  const resolveContact = {
+    en: 'Contact',
+    fr: 'Contact',
   }
   let homeurl = "/";
   if (locale != 'default') {
@@ -31,11 +31,11 @@ const Navigation = ({ locale, locales }) => {
         <div className={styles.navlogo}>
           <a href={homeurl}>
             {/* <img
-              src="https://a.storyblok.com/f/133261/3039x582/a60d166ec2/logo-colored-full.png/m/200x0"
-              alt="IMDBPlus Logo"
+              src=""C:\Source\Bakkerij Denolf\Bakkerij Denolf\.next\cache\images\Banner.jpg""
+              alt="Bakkerij Denolf Logo"
               className=""
             /> */}
-            <Image src="/logo-colored-full.png" alt="IMDBPlus Logo" width="128" height="25" />
+            <Image src="/Logo.jpg" alt="Bakkerij Denolf Logo" width="75px" height="75px" />
           </a>
         </div>
         <div className={styles.navlinkswrapper}>
@@ -50,7 +50,7 @@ const Navigation = ({ locale, locales }) => {
               <a href={`${defaultLocale}pages/news`} className={styles.newsitem}>{resolveNews[locale]}</a>
             </div>
             <div className={styles.navlink}>
-              <a href={`${defaultLocale}pages/shop`} className={styles.product}>{resolveMerchandise[locale]}</a>
+              <a href={`${defaultLocale}pages/shop`} className={styles.product}>{resolveContact[locale]}</a>
             </div>
           </div>
           <div className={styles.navlocales}>
